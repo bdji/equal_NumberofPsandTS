@@ -1,0 +1,13 @@
+//Write a JavaScript program to check whether a given string contains equal number of p's and t's
+
+
+function checkString (str) {
+    //replace everything with emptiness but p
+    let strP = str.replace(/[^p]/g, "");
+    let strT = str.replace(/[^t]/g, "");
+let condition1P = strP.length;
+let condition2T = strT.length;
+ return condition1P === condition2T;
+}
+
+console.log(checkString("paatpss"));
